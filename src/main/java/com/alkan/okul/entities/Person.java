@@ -15,17 +15,15 @@ public class Person {
     private String name;
     private String surname;
     private String job;
-    private double salary;
 
     public Person() {
     }
 
-    public Person(int id, String name, String surname, String job, double salary) {
+    public Person(int id, String name, String surname, String job) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.job = job;
-        this.salary = salary;
     }
 
     public int getId() {
@@ -60,11 +58,4 @@ public class Person {
         this.job = job;
     }
 
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
 }

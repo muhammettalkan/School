@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("people/")
 public class PersonController {
 
-    @Autowired
-    PersonService service;
-
 
 
 }
