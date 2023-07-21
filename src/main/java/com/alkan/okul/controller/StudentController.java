@@ -20,7 +20,7 @@ public class StudentController {
         return service.register(studentDto);
     }
 
-    @GetMapping("list")
+    @GetMapping("/list")
     public List<StudentDto> list(){
         return service.list();
     }
