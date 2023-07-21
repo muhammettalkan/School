@@ -1,6 +1,4 @@
-package com.alkan.okul.Responses;
-
-import com.alkan.okul.entities.Person;
+package com.alkan.okul.responses;
 
 public class PersonResponse {
 

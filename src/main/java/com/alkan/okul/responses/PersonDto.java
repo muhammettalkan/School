@@ -1,4 +1,4 @@
-package com.alkan.okul.Responses;
+package com.alkan.okul.responses;
 
 import java.io.Serializable;
 

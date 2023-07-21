@@ -4,7 +4,7 @@ spring:
   application:
     name: web-01
   datasource:
-    url: jdbc:mysql://localhost:3306/java_web_01?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/okul_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
     username: root
     password: 985263
     driverClassName: com.mysql.jdbc.Driver

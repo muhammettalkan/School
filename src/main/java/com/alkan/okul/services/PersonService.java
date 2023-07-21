@@ -1,9 +1,8 @@
 package com.alkan.okul.services;
 
-import com.alkan.okul.Responses.PersonDto;
-import com.alkan.okul.Responses.PersonResponse;
+import com.alkan.okul.responses.PersonDto;
+import com.alkan.okul.responses.PersonResponse;
 import com.alkan.okul.entities.Person;
-import com.alkan.okul.repos.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
