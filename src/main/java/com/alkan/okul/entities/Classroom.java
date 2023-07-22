@@ -4,24 +4,21 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import org.springframework.web.bind.annotation.PathVariable;
 
 @Entity
-public class Person {
+public class Classroom {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
-    private String surname;
 
-    public Person() {
+    public Classroom() {
     }
 
-    public Person(int id, String name, String surname) {
+    public Classroom(int id, String name) {
         this.id = id;
         this.name = name;
-        this.surname = surname;
     }
 
     public int getId() {
@@ -39,14 +36,4 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-
 }

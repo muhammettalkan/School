@@ -1,8 +1,8 @@
 package com.alkan.okul.responses;
 
-public class TeacherResponse {
+public class SubjectResponse {
 
-    public TeacherDto teacherDto;
+    public SubjectDto subjectDto;
 
     public int code = 200;
 

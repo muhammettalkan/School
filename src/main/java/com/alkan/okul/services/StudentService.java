@@ -21,7 +21,6 @@ public class StudentService {
         dto.id = student.getId();
         dto.name = student.getName();
         dto.surname = student.getSurname();
-        dto.job = student.getJob();
         return dto;
     }
     public Student fromDto(Student student,StudentDto dto){
@@ -31,7 +30,6 @@ public class StudentService {
         student.setId(dto.id);
         student.setName(dto.name);
         student.setSurname(dto.surname);
-        student.setJob(dto.job);
         student = repository.save(student);
         return student;
     }
