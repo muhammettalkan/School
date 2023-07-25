@@ -1,6 +1,6 @@
 package com.alkan.okul.controller;
 
-import com.alkan.okul.responses.SubjectDto;
+import com.alkan.okul.responses.DTOs.SubjectDto;
 import com.alkan.okul.responses.SubjectResponse;
 import com.alkan.okul.services.SubjectService;
 import org.springframework.beans.factory.annotation.Autowired;

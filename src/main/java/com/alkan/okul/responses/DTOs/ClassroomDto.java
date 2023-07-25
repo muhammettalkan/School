@@ -1,15 +1,14 @@
-package com.alkan.okul.responses;
+package com.alkan.okul.responses.DTOs;
 
-public class SubjectDto {
+public class ClassroomDto {
 
     public int id;
-
     public String name;
 
-    public SubjectDto() {
+    public ClassroomDto() {
     }
 
-    public SubjectDto(int id, String name) {
+    public ClassroomDto(int id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -29,5 +28,4 @@ public class SubjectDto {
     public void setName(String name) {
         this.name = name;
     }
-
 }

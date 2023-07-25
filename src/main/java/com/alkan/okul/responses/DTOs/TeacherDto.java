@@ -1,4 +1,7 @@
-package com.alkan.okul.responses;
+package com.alkan.okul.responses.DTOs;
+
+import com.alkan.okul.responses.DTOs.PersonDto;
+import com.alkan.okul.responses.DTOs.SubjectDto;
 
 import java.io.Serializable;
 

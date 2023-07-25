@@ -1,7 +1,7 @@
 package com.alkan.okul.services;
 
 import com.alkan.okul.repos.StudentRepository;
-import com.alkan.okul.responses.StudentDto;
+import com.alkan.okul.responses.DTOs.StudentDto;
 import com.alkan.okul.responses.StudentResponse;
 import com.alkan.okul.entities.Student;
 import org.springframework.beans.factory.annotation.Autowired;

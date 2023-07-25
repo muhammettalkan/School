@@ -1,37 +1,37 @@
 package com.alkan.okul.controller;
 
-import com.alkan.okul.responses.DTOs.StudentDto;
-import com.alkan.okul.responses.StudentResponse;
-import com.alkan.okul.services.StudentService;
+import com.alkan.okul.responses.DTOs.TeacherDto;
+import com.alkan.okul.responses.TeacherResponse;
+import com.alkan.okul.services.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("students/")
-public class StudentController {
-
+@RequestMapping("/teachers")
+public class TeacherController {
+    
     @Autowired
-    StudentService service;
+    TeacherService service;
 
     @PostMapping
-    public StudentResponse register(@RequestBody StudentDto studentDto){
-        return service.register(studentDto);
+    public TeacherResponse register(@RequestBody TeacherDto teacherDto){
+        return service.register(teacherDto);
     }
 
     @GetMapping("/list")
-    public List<StudentDto> list(){
+    public List<TeacherDto> list(){
         return service.list();
     }
 
     @GetMapping("/{id}")
-    public StudentResponse find(@PathVariable(value = "id") int id){
+    public TeacherResponse find(@PathVariable(value = "id") int id){
         return service.find(id);
     }
 
     @PutMapping
-    public StudentResponse update(StudentDto dto){
+    public TeacherResponse update(TeacherDto dto){
         return service.update(dto);
     }
 
@@ -39,7 +39,5 @@ public class StudentController {
     public String delete(@PathVariable(value = "id") int id){
         return service.delete(id);
     }
-
-
-
+    
 }

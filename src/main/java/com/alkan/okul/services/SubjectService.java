@@ -2,7 +2,7 @@ package com.alkan.okul.services;
 
 import com.alkan.okul.entities.Subject;
 import com.alkan.okul.repos.SubjectRepository;
-import com.alkan.okul.responses.SubjectDto;
+import com.alkan.okul.responses.DTOs.SubjectDto;
 import com.alkan.okul.responses.SubjectResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

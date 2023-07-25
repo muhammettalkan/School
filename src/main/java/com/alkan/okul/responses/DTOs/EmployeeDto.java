@@ -1,6 +1,6 @@
-package com.alkan.okul.responses;
+package com.alkan.okul.responses.DTOs;
 
-public class EmployeeDto extends PersonDto{
+public class EmployeeDto extends PersonDto {
 
     public double salary;
 

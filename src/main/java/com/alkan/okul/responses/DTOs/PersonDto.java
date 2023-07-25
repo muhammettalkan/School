@@ -1,4 +1,4 @@
-package com.alkan.okul.responses;
+package com.alkan.okul.responses.DTOs;
 
 import java.io.Serializable;
 

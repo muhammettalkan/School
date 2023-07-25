@@ -1,6 +1,7 @@
 package com.alkan.okul.entities;
 
 import jakarta.persistence.*;
+import org.hibernate.engine.internal.Cascade;
 
 import java.util.List;
 
@@ -12,13 +13,13 @@ public class School {
 
     private String name;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Student> listOfStudents;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Classroom> listOfClassrooms;
 
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Employee> listOfEmployee;
 
     public School() {

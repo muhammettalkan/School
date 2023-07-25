@@ -1,5 +1,6 @@
 package com.alkan.okul.entities;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToOne;
 
@@ -9,7 +10,7 @@ public class Teacher extends Person{
 
     private double salary;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Subject branch;
 
     public Teacher() {
